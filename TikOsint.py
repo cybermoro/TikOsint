@@ -13,7 +13,7 @@ banner = """
     | |   | ||   < | |__| |\__ \| || | | || |_ 
     |_|   |_||_|\_\ \____/ |___/|_||_| |_| \__|
                                                
-    By : Moro                                           
+    Coded By : Moro                                           
     Github : https://github.com/zqgc
     Insta : https://instagram.com/zq.gc
     Discord : @r_jm
