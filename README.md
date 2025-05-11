@@ -43,3 +43,7 @@ git clone https://github.com/zqgc/TikOsint.git
 cd TikOsint
 pip install -r requirements.txt
 python TikOsint.py
+```
+
+## IF YOU WANT TO FUND ME :
+Bitcoin Adress : bc1q7cxxr3202f2r3wk35yu340xmvknm53rrysvvzs
