@@ -1,6 +1,4 @@
-requests
-beautifulsoup4
-pystyle
-pycountry
-time
-json
+requests==2.31.0
+beautifulsoup4==4.12.3
+pystyle==1.1.0
+pycountry==23.12.8
