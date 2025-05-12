@@ -1,9 +1,21 @@
+import os
+import platform
 import requests
 from bs4 import BeautifulSoup
 import json
 from pystyle import Colors, Write, Colorate
 import time
 import pycountry
+
+# Function to clear the screen
+def clear_screen():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+# Clear the screen at the start
+clear_screen()
 
 banner = """
   _______  _  _      ____        _         _   
@@ -13,7 +25,7 @@ banner = """
     | |   | ||   < | |__| |\__ \| || | | || |_ 
     |_|   |_||_|\_\ \____/ |___/|_||_| |_| \__|
                                                
-    Coded By : Moro                                           
+    By : Moro                                           
     Github : https://github.com/zqgc
     Insta : https://instagram.com/zq.gc
     Discord : @r_jm
@@ -31,10 +43,8 @@ def get_country_name(code):
 def convert_country(code):
     return f"{country_code_to_flag(code)} {get_country_name(code)}"
 
-
 print(Colorate.Vertical(Colors.rainbow, banner))
 Write.Print('This Tool is for educational purposes Only!!!\n', Colors.blue_to_purple, interval=0.1)
-
 
 Target = Write.Input("Enter TikTok Username: ", Colors.blue_to_purple, interval=0.01)
 
@@ -79,7 +89,7 @@ class TikTokUserScraper:
             "Private Account": "YES" if u.get("privateAccount") else "NO",
             "Followers": s.get("followerCount", "N/A"),
             "Following": s.get("followingCount", "N/A"),
-            "Friend Count": s.get("friendCount", "N/A") ,
+            "Friend Count": s.get("friendCount", "N/A"),
             "Likes": s.get("heartCount", "N/A"),
             "Video Count": s.get("videoCount", "N/A"),
             "Region": convert_country(u.get("region", "")),
@@ -96,6 +106,7 @@ class TikTokUserScraper:
             Write.Print(f"{key}: ", Colors.rainbow, interval=0.005)
             Write.Print(f"{value}\n", Colors.green_to_yellow, interval=0.005)
         Write.Print("\n=======================================\n", Colors.rainbow, interval=0.01)
+
 if __name__ == "__main__":
     scraper = TikTokUserScraper(Target)
     scraper.show_info()
