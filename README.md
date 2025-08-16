@@ -1,32 +1,36 @@
-# 🎯 TikOsint
+# 🎯 TikOsint — TikTok OSINT Toolkit
 
-TikOsint is an educational OSINT (Open Source Intelligence) tool that scrapes publicly available TikTok user information by username.
+**TikOsint** is an educational OSINT (Open Source Intelligence) tool that scrapes publicly available TikTok user metadata by username.
 
----
+It leverages the hydration payload embedded in TikTok profile pages to extract detailed account information — no login or API keys required.
 
-## 📋 Information Provided:
-
-- **Username** 📝  
-- **Display Name** 👤  
-- **Bio** 🖋️  
-- **Avatar URL** 🖼️  
-- **Verified** ✅❌  
-- **Private Account** 🔒🔓  
-- **Followers** 👥  
-- **Following** 🔄  
-- **Likes** ❤️  
-- **Video Count** 🎥  
-- **Region** 🌍  
-- **Language** 🌐  
-- **SecUID** 🔑  
-- **OpenID** 🔓  
-- **UnionID** 🔗  
-- **Profile Deep Link** 🔗  
-- **Friend Count** 🤝  
+> 🧠 Useful for recon, bug bounty reporting, or passive intelligence gathering.
 
 ---
 
-## 🐧 Installation on Linux
+## 📋 Features
+
+- 📝 Username  
+- 👤 Display Name  
+- 🖋️ Bio  
+- 🖼️ Avatar URL  
+- ✅❌ Verified Status  
+- 🔒🔓 Private Account Flag  
+- 👥 Followers  
+- 🔄 Following  
+- ❤️ Likes  
+- 🎥 Video Count  
+- 🌍 Region (with flag + full country name)  
+- 🌐 Language  
+- 🔑 `secUid`  
+- 🔓 `openId`  
+- 🔗 `unionId`  
+- 🔗 Profile Deep Link  
+- 🤝 Friend Count  
+
+---
+
+## 🐧 Installation (Linux)
 
 ```bash
 git clone https://github.com/zqgc/TikOsint.git
@@ -34,16 +38,3 @@ cd TikOsint
 sudo apt update && sudo apt install python3 python3-pip -y
 pip3 install -r requirements.txt
 python3 TikOsint.py
-```
-## Instalation For Termux 
-```bash
-pkg update && pkg upgrade
-pkg install git python -y
-git clone https://github.com/zqgc/TikOsint.git
-cd TikOsint
-pip install -r requirements.txt
-python TikOsint.py
-```
-
-## IF YOU WANT TO FUND ME :
-Bitcoin Adress : bc1q7cxxr3202f2r3wk35yu340xmvknm53rrysvvzs
