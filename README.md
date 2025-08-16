@@ -33,7 +33,7 @@ It leverages the hydration payload embedded in TikTok profile pages to extract d
 ## 🐧 Installation (Linux)
 
 ```bash
-git clone https://github.com/zqgc/TikOsint.git
+git clone https://github.com/cybermoro/TikOsint.git
 cd TikOsint
 sudo apt update && sudo apt install python3 python3-pip -y
 pip3 install -r requirements.txt
